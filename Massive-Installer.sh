@@ -73,9 +73,9 @@
 
 
 #Package 1 (dialog)
-        if dpkg -l | grep '^ii'| grep 'dialog' \
+        if dpkg --get-selections | grep 'dialog' \
         | grep 'Displays user-friendly dialog boxes from shell scripts'; then
-            echo "The Mass Installer - Docker Launcher will launch shortly..."
+            echo "The Massive Installer will launch shortly..."
             sleep 3
         else
             echo "Installing the Package..."
